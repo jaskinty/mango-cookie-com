@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mango-cookie.com</title>
+</head>
+<body>
+  <canvas width="1000" height="1000"></canvas>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    width: 200px;
+  }
+</style>
+<script src="https://unpkg.com/@rive-app/canvas"></script>
+<script>
+  new rive.Rive({
+    src: "./mango-cookie.riv",
+    canvas: document.querySelector("canvas"),
+    autoplay: true,
+    stateMachines: "Timeline 1",
+  });
+</script>
+</body>
+</html>
